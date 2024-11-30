@@ -12,5 +12,146 @@ body {
   text-align: center;
 }
 
+/* Sisältöalue */
+.content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+}
 
+/* Otsikko */
+.content h2 {
+  margin: 0 0 20px;
+  font-size: 2rem;
+  color: #b10076;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Tuotelistaus */
+.valikko {
+  margin-bottom: 20px;
+}
+
+.valikko select {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 250px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.valikko select:hover,
+.valikko select:focus {
+  border-color: #b10076;
+  outline: none;
+  box-shadow: 0 0 5px rgba(98, 0, 234, 0.5);
+}
+
+/* Counter-painikkeet */
+.Counterbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.Counterbtn button {
+  background-color: #b10076;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.Counterbtn button:hover {
+  background-color: #b10076;
+  transform: scale(1.05);
+}
+
+.Counterbtn button:active {
+  background-color: #b10076;
+  transform: scale(0.95);
+}
+
+.order-info {
+  margin: 20px auto;
+  max-width: 600px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-info h2 {
+  font-size: 1.8rem;
+  color: #b10076;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px;
+}
+
+.grid-item {
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+}
+
+.grid-item:nth-child(-n+3) {
+  background-color: #b10076;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+/* Responsiivisuus */
+@media (max-width: 768px) {
+  .content {
+    padding: 20px;
+  }
+
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .valikko select {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .Counterbtn button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h2 {
+    font-size: 1.2rem;
+  }
+
+  .Counterbtn {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
 
