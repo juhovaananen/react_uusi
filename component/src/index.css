@@ -1,4 +1,4 @@
-/* Yleiset asetukset */
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -12,7 +12,7 @@ body {
   text-align: center;
 }
 
-/* Sisältöalue */
+
 .content {
   background-color: #fff;
   padding: 30px;
@@ -22,7 +22,7 @@ body {
   width: 90%;
 }
 
-/* Otsikko */
+
 .content h2 {
   margin: 0 0 20px;
   font-size: 2rem;
@@ -32,7 +32,7 @@ body {
   letter-spacing: 2px;
 }
 
-/* Tuotelistaus */
+
 .valikko {
   margin-bottom: 20px;
 }
@@ -52,10 +52,10 @@ body {
 .valikko select:focus {
   border-color: #b10076;
   outline: none;
-  box-shadow: 0 0 5px rgba(98, 0, 234, 0.5);
+  box-shadow: 0 0 5px rgba(234, 0, 226, 0.5);
 }
 
-/* Counter-painikkeet */
+
 .Counterbtn {
   display: flex;
   justify-content: center;
@@ -77,7 +77,7 @@ body {
 }
 
 .Counterbtn button:hover {
-  background-color: #b10076;
+  background-color: #8c015e;
   transform: scale(1.05);
 }
 
@@ -123,7 +123,7 @@ body {
   font-size: 1rem;
   border-radius: 4px;
 }
-/* Responsiivisuus */
+
 @media (max-width: 768px) {
   .content {
     padding: 20px;
